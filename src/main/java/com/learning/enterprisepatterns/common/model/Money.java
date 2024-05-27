@@ -1,4 +1,4 @@
-package com.learning.enterprisepatterns.model;
+package com.learning.enterprisepatterns.common.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -74,6 +74,12 @@ public final class Money implements Comparable<Money> {
 
     public Money multiply(BigDecimal other, MathContext mathContext) {
         return new Money(other.multiply(getAmount(), mathContext), currency, mathContext);
+    }
+
+    public Money[] allocate(long equalParts) {
+        val ratio = new long[(int) equalParts];
+        Arrays.fill(ratio, 1);
+        return allocate(ratio);
     }
 
     public Money[] allocate(long[] ratios) {

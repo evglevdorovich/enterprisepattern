@@ -1,4 +1,4 @@
-package com.learning.enterprisepatterns.model;
+package com.learning.enterprisepatterns.common.model;
 
 import org.junit.jupiter.api.Test;
 
