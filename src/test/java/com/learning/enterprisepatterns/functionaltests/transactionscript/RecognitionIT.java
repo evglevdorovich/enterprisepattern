@@ -1,4 +1,4 @@
-package com.learning.enterprisepatterns.functionaltests;
+package com.learning.enterprisepatterns.functionaltests.transactionscript;
 
 import com.learning.enterprisepatterns.common.model.Money;
 import com.learning.enterprisepatterns.transactionscript.service.RecognitionService;

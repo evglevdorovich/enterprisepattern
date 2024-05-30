@@ -18,4 +18,11 @@ CREATE TABLE revenue_recognitions
     amount        decimal,
     recognized_on date,
     PRIMARY KEY (contract, recognized_on)
+);
+CREATE TABLE people
+(
+    id                   SERIAL PRIMARY KEY,
+    first_name           varchar,
+    last_name            varchar,
+    number_of_dependents int
 )
