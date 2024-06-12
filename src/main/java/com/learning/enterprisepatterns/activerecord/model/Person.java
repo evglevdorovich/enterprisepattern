@@ -1,7 +1,7 @@
 package com.learning.enterprisepatterns.activerecord.model;
 
 import com.learning.enterprisepatterns.activerecord.db.DB;
-import com.learning.enterprisepatterns.activerecord.registry.Registry;
+import com.learning.enterprisepatterns.registry.Registry;
 import com.learning.enterprisepatterns.common.model.Money;
 import lombok.Data;
 import lombok.NoArgsConstructor;
