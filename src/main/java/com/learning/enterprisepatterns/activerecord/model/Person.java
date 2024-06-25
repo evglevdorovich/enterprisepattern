@@ -1,8 +1,8 @@
 package com.learning.enterprisepatterns.activerecord.model;
 
 import com.learning.enterprisepatterns.activerecord.db.DB;
-import com.learning.enterprisepatterns.registry.Registry;
 import com.learning.enterprisepatterns.common.model.Money;
+import com.learning.enterprisepatterns.registry.Registry;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.val;
@@ -53,7 +53,7 @@ public class Person {
             return registeredPerson;
         }
 
-        val rowSet = DB.queryForRowSet(FIND_PERSON_BY_ID, new Object[]{id});
+        val rowSet = DB.queryForRowSet(FIND_PERSON_BY_ID, id);
         rowSet.next();
         return load(rowSet);
     }

@@ -19,6 +19,11 @@ public class Registry {
         return (Person) MAPPED_OBJECT_BY_ID_BY_CLASS.get().getOrDefault(Person.class, Map.of()).get(key);
     }
 
+    @SuppressWarnings("unchecked")
+    public static <T> T get(Object key, Class<?> clazz) {
+        return (T) MAPPED_OBJECT_BY_ID_BY_CLASS.get().getOrDefault(clazz, Map.of()).get(key);
+    }
+
     public static void register(Object key, Object value, Class<?> clazz) {
         MAPPED_OBJECT_BY_ID_BY_CLASS.get().getOrDefault(clazz, new HashMap<>()).put(key, value);
     }

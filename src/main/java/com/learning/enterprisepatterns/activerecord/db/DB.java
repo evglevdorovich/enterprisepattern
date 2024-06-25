@@ -4,6 +4,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Service;
 
+/**
+ * Static mostly for implementing Active Record pattern
+ */
 @Service
 public class DB {
     private static JdbcTemplate jdbcTemplate;

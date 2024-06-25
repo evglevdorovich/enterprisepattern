@@ -1,16 +1,18 @@
 package com.learning.enterprisepatterns.datamapper.model;
 
 import com.learning.enterprisepatterns.common.model.Money;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Person {
+    private long id;
     private String lastName;
     private String firstName;
     private int numberOfDependents;
-    private long id;
 
     public Person(String lastName, String firstName, int numberOfDependents) {
         this.lastName = lastName;
