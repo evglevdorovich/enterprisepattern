@@ -1,12 +1,16 @@
-package com.learning.enterprisepatterns.datamapper.model;
+package com.learning.enterprisepatterns.datamapper.model.thirdpackage.mapper;
 
+import com.learning.enterprisepatterns.datamapper.model.Person;
+import com.learning.enterprisepatterns.datamapper.model.PersonFinder;
 import lombok.AllArgsConstructor;
 import lombok.val;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class PersonMapper extends AbstractMapper<Person> {
+@Service
+public class PersonMapper extends AbstractMapper<Person> implements PersonFinder {
     private static final String COLUMNS = "id, first_name, last_name, number_of_dependents";
 
     private static final String FIND_STATEMENT = """

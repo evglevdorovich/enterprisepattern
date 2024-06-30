@@ -1,7 +1,7 @@
 package com.learning.enterprisepatterns.functionaltests.datamapper;
 
 import com.learning.enterprisepatterns.datamapper.model.Person;
-import com.learning.enterprisepatterns.datamapper.model.PersonMapper;
+import com.learning.enterprisepatterns.datamapper.model.thirdpackage.mapper.PersonMapper;
 import com.learning.enterprisepatterns.registry.Registry;
 import lombok.val;
 import org.junit.jupiter.api.Test;

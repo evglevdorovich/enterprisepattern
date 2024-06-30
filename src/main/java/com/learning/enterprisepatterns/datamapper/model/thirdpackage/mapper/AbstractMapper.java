@@ -1,4 +1,4 @@
-package com.learning.enterprisepatterns.datamapper.model;
+package com.learning.enterprisepatterns.datamapper.model.thirdpackage.mapper;
 
 import com.learning.enterprisepatterns.activerecord.db.DB;
 import com.learning.enterprisepatterns.registry.Registry;
