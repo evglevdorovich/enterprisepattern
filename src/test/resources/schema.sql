@@ -25,4 +25,10 @@ CREATE TABLE people
     first_name           varchar,
     last_name            varchar,
     number_of_dependents int
+);
+
+CREATE TABLE album
+(
+    id    SERIAL PRIMARY KEY,
+    title varchar
 )
