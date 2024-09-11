@@ -31,4 +31,23 @@ CREATE TABLE album
 (
     id    SERIAL PRIMARY KEY,
     title varchar
-)
+);
+
+CREATE TABLE producers
+(
+    id   SERIAL PRIMARY KEY,
+    name varchar
+);
+
+CREATE TABLE movies
+(
+    id          SERIAL PRIMARY KEY,
+    name        varchar,
+    producer_id int,
+    FOREIGN KEY (producer_id) REFERENCES producers (id)
+);
+
+
+
+
+
